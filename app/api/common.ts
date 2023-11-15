@@ -96,10 +96,11 @@ export async function requestOpenai(req: NextRequest) {
       console.error("[OpenAI] gpt4 filter", e);
     }
   }
-
   try {
+    console.log("[Request URL]", fetchUrl);
+    console.log("[Request Options]", fetchOptions);
     const res = await fetch(fetchUrl, fetchOptions);
-
+    console.log("[Response]", res);
     // to prevent browser prompt for credentials
     const newHeaders = new Headers(res.headers);
     newHeaders.delete("www-authenticate");
