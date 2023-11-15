@@ -63,7 +63,8 @@ async function handle(
         status: response.status,
       });
     }
-
+    console.log("[req]", req);
+    console.log("[Response]", response);
     return response;
   } catch (e) {
     console.error("[OpenAI] ", e);
