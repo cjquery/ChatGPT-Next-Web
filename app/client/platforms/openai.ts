@@ -112,7 +112,6 @@ export class ChatGPTApi implements LLMApi {
         () => controller.abort(),
         REQUEST_TIMEOUT_MS,
       );
-      console.log("[fetch request]", chatPayload);
       if (shouldStream) {
         let responseText = "";
         let finished = false;
