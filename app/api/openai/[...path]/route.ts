@@ -59,12 +59,11 @@ async function handle(
     if (subpath === OpenaiPath.ListModelPath && response.status === 200) {
       const resJson = (await response.json()) as OpenAIListModelResponse;
       const availableModels = getModels(resJson);
+      console.log("[available models Response]", availableModels);
       return NextResponse.json(availableModels, {
         status: response.status,
       });
     }
-    console.log("[req]", req);
-    console.log("[Response]", response);
     return response;
   } catch (e) {
     console.error("[OpenAI] ", e);

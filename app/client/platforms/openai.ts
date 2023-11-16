@@ -112,7 +112,7 @@ export class ChatGPTApi implements LLMApi {
         () => controller.abort(),
         REQUEST_TIMEOUT_MS,
       );
-
+      console.log("[fetch request]", chatPayload);
       if (shouldStream) {
         let responseText = "";
         let finished = false;
@@ -170,6 +170,7 @@ export class ChatGPTApi implements LLMApi {
           },
           onmessage(msg) {
             if (msg.data === "[DONE]" || finished) {
+              console.log("[fetch response]", responseText);
               return finish();
             }
             const text = msg.data;
@@ -205,6 +206,7 @@ export class ChatGPTApi implements LLMApi {
 
         const resJson = await res.json();
         const message = this.extractMessage(resJson);
+        console.log("[fetch response]", message);
         options.onFinish(message);
       }
     } catch (e) {
