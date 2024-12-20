@@ -516,7 +516,7 @@ export const DEFAULT_MODELS = [
       sorted: 11,
     },
   })),
-  ...chatglmModels.map((name) => ({
+ /* ...chatglmModels.map((name) => ({
     name,
     available: true,
     sorted: seq++,
@@ -526,7 +526,7 @@ export const DEFAULT_MODELS = [
       providerType: "chatglm",
       sorted: 12,
     },
-  })),
+  })),*/
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
