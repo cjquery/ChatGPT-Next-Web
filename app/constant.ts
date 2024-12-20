@@ -406,9 +406,9 @@ export const DEFAULT_MODELS = [
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
   })),
-  ...openaiModels.map((name) => ({
+/*  ...openaiModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "azure",
@@ -419,7 +419,7 @@ export const DEFAULT_MODELS = [
   })),
   ...googleModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "google",
@@ -430,7 +430,7 @@ export const DEFAULT_MODELS = [
   })),
   ...anthropicModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "anthropic",
@@ -441,7 +441,7 @@ export const DEFAULT_MODELS = [
   })),
   ...baiduModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "baidu",
@@ -449,7 +449,7 @@ export const DEFAULT_MODELS = [
       providerType: "baidu",
       sorted: 5,
     },
-  })),
+  })),*/
   ...bytedanceModels.map((name) => ({
     name,
     available: true,
@@ -472,9 +472,9 @@ export const DEFAULT_MODELS = [
       sorted: 7,
     },
   })),
-  ...tencentModels.map((name) => ({
+  /*...tencentModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "tencent",
@@ -485,7 +485,7 @@ export const DEFAULT_MODELS = [
   })),
   ...moonshotModes.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "moonshot",
@@ -496,7 +496,7 @@ export const DEFAULT_MODELS = [
   })),
   ...iflytekModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "iflytek",
@@ -504,7 +504,7 @@ export const DEFAULT_MODELS = [
       providerType: "iflytek",
       sorted: 10,
     },
-  })),
+  })),*/
   ...xAIModes.map((name) => ({
     name,
     available: true,
@@ -518,7 +518,7 @@ export const DEFAULT_MODELS = [
   })),
   ...chatglmModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "chatglm",
