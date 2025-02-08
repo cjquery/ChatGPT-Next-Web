@@ -542,9 +542,6 @@ const alibabaModes = [
   "qwen-turbo",
   "qwen-plus",
   "qwen-max",
-  "qwen-max-0428",
-  "qwen-max-0403",
-  "qwen-max-0107",
   "qwen-max-longcontext",
 ];
 
@@ -752,6 +749,7 @@ export const DEFAULT_MODELS = [
       sorted: 13,
     },
   })),
+    /*
   ...siliconflowModels.map((name) => ({
     name,
     available: true,
@@ -762,7 +760,7 @@ export const DEFAULT_MODELS = [
       providerType: "siliconflow",
       sorted: 14,
     },
-  })),
+  })),*/
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
