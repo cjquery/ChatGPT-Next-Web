@@ -758,7 +758,7 @@ export const DEFAULT_MODELS = [
       sorted: 13,
     },
   })),
-  ...siliconflowModels.map((name) => ({
+ /* ...siliconflowModels.map((name) => ({
     name,
     available: true,
     sorted: seq++,
@@ -768,7 +768,7 @@ export const DEFAULT_MODELS = [
       providerType: "siliconflow",
       sorted: 14,
     },
-  })),
+  })),*/
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
