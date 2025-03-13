@@ -477,15 +477,15 @@ const openaiModels = [
   // As of July 2024, gpt-4o-mini should be used in place of gpt-3.5-turbo,
   // as it is cheaper, more capable, multimodal, and just as fast. gpt-3.5-turbo is still available for use in the API.
   "gpt-3.5-turbo",
-  "gpt-4",
+ // "gpt-4",
   "gpt-4-turbo",
   "gpt-4o",
   "chatgpt-4o-latest",
   "gpt-4o-mini",
   "gpt-4-vision-preview",
-  "dall-e-3",
+  //"dall-e-3",
   "o1-mini",
-  "o1-preview",
+  //"o1-preview",
 ];
 
 const googleModels = [
@@ -549,7 +549,8 @@ const bytedanceModels = [
   "Doubao-pro-256k",
   "Doubao-pro-32k",
   "GLM3-130B金融模型",
-  "Doubao-vision-pro-32k"
+  "Doubao-vision-pro-32k",
+  "DeepSeek-R1"
 ];
 
 const alibabaModes = [
@@ -735,7 +736,7 @@ export const DEFAULT_MODELS = [
       sorted: 10,
     },
   })),*/
-  ...xAIModes.map((name) => ({
+ /* ...xAIModes.map((name) => ({
     name,
     available: true,
     sorted: seq++,
@@ -745,7 +746,7 @@ export const DEFAULT_MODELS = [
       providerType: "xai",
       sorted: 11,
     },
-  })),
+  })),*/
  /* ...chatglmModels.map((name) => ({
     name,
     available: true,
