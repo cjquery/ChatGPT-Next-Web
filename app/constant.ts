@@ -546,11 +546,8 @@ const baiduModels = [
 ];
 
 const bytedanceModels = [
-  "Doubao-pro-256k",
-  "Doubao-pro-32k",
-  "GLM3-130B金融模型",
-  "Doubao-vision-pro-32k",
-  "DeepSeek-R1"
+  "deepseek-v3-250324",
+  "deepseek-r1-250120"
 ];
 
 const alibabaModes = [
