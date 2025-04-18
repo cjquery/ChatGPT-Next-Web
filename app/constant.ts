@@ -689,7 +689,7 @@ export const DEFAULT_MODELS = [
       sorted: 6,
     },
   })),
-  ...alibabaModes.map((name) => ({
+/*  ...alibabaModes.map((name) => ({
     name,
     available: true,
     sorted: seq++,
@@ -699,7 +699,7 @@ export const DEFAULT_MODELS = [
       providerType: "alibaba",
       sorted: 7,
     },
-  })),
+  })),*/
   /*...tencentModels.map((name) => ({
     name,
     available: true,
